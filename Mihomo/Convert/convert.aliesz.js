@@ -140,7 +140,7 @@ const USER_CONFIG = {
             behavior: "classical",
             format: "text",
             interval: 86400,
-            url: "https://cdn.jsdelivr.net/gh/szkane/ClashRuleSet@main/Clash/Ruleset/AiDomain.list",
+            url: "https://gcore.jsdelivr.net/gh/JXY415/ProxyCfg@main/Mihomo/Rules/AI.list",
             path: "./ruleset/AiDomain.list",
         },
     },
