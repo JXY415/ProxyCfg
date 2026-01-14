@@ -902,7 +902,12 @@ function main(params) {
     allGroups.push({
         name: G.SELECT,
         type: "select",
-        proxies: buildList(G.MANUAL, regionGroupNames, "DIRECT"),
+        proxies: buildList(
+            G.MANUAL,
+            regionGroupNames,
+            specialGroupNames,
+            "DIRECT"
+        ),
         icon: CONSTANTS.ICONS.PROXY
     });
 
@@ -910,6 +915,7 @@ function main(params) {
     allGroups.push({
         name: G.MANUAL,
         type: "select",
+        proxies: buildList(regionGroupNames, specialGroupNames),
         "include-all": true,
         icon: CONSTANTS.ICONS.SELECT
     });
